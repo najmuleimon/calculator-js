@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-center font-semibold text-lg text-slate-700 mt-14">Simple Javascript Calculator</h1>
+    <div class="max-w-sm bg-slate-200 mx-auto p-4 mt-8 rounded-md shadow-md">
+        <input id="display-input" type="text" class="h-12 w-full bg-white rounded px-2 font-semibold text-lg" disabled>
+        <div id="keypad" class="grid grid-cols-4 gap-2 mt-2">
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-green-400">C</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-green-400">&lt;</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-violet-400">%</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-violet-400">/</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-sky-400">7</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-sky-400">8</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-sky-400">9</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-violet-400">*</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-sky-400">4</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-sky-400">5</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-sky-400">6</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-violet-400">-</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-sky-400">1</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-sky-400">2</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-sky-400">3</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-violet-400">+</button>
+            <button class="col-span-2 h-14 w-full rounded-sm text-white font-bold bg-sky-400">0</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-sky-400">.</button>
+            <button class="h-14 w-full rounded-sm text-white font-bold bg-green-400">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
