@@ -8,14 +8,15 @@ document.getElementById("keypad").addEventListener("click", function(event){
         displayInput.value =  displayInput.value.slice(0, -1)
     }
     else if(number == "."){
+        // let pattern = /\./g
+        // if(!pattern.test(displayInput.value))
         displayInput.value = displayInput.value + number
     }
     else if(number == "%"){
-        // if(number == "+" || number == "-" || number == "*" || number == "/"){
-        //     let result = eval(displayInput.value)
-        //     displayInput.value = result / 100
-        // }
-        displayInput.value = displayInput.value / 100
+        // displayInput.value = displayInput.value / 100
+        let pInput = displayInput.value.split("*")
+        let percent = pInput[0] * (pInput[1] / 100)
+        displayInput.value = percent
     }
     else if(number == "="){
         displayInput.value = eval(displayInput.value)
